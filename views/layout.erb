@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random IMDb Picks</title>
+    <style>
+        body { font-family: Arial, sans-serif; text-align: center; }
+        header { padding: 20px; background-color: #333; color: white; }
+        footer { padding: 10px; background-color: #333; color: white; }
+        .movie { margin: 20px; display: inline-block; width: 300px; }
+        img { max-width: 100%; height: auto; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Random IMDb Picks</h1>
+    </header>
+
+    <!-- Yield the content of the index.erb here -->
+    <%= yield %>
+
+    <footer>
+        <p>&copy; 2025 IMDb Picks App</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,10 @@
+<h2>Hit Refresh/F5 For Another 3</h2>
+
+<% @movies.each do |movie| %>
+    <div class="movie">
+        <h3><a href="<%= movie[:imdb_link] %>" target="_blank"><%= movie[:title] %></a> (<%= movie[:year] %>)</h3>
+        <p><strong>Genre:</strong> <%= movie[:genre] %></p>
+        <p><strong>Rating:</strong> <%= movie[:rating] %></p>
+        <img src="<%= movie[:thumbnail] %>" alt="<%= movie[:title] %> Poster">
+    </div>
+<% end %>
