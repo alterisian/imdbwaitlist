@@ -1,0 +1,4 @@
+# flyctl launch added from .gitignore
+**/public/film_images
+**/movie_cache.json
+fly.toml
