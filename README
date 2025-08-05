@@ -1,1 +1,33 @@
-ruby app.rb to run sinatra
+## Running Locally
+
+To run the app on your local machine:
+
+1. Install dependencies:
+   ```
+   bundle install
+   ```
+
+2. Start the server directly with Ruby:
+   ```
+   ruby app.rb
+   ```
+   This will start the Sinatra app on `localhost:4567` by default.
+
+---
+
+## Deploying to Fly.io
+
+Fly.io uses a `config.ru` file and runs the app with `rackup`.  
+When deployed, Fly.io will start the server using:
+
+```
+bundle exec rackup --host 0.0.0.0 --port 8080
+```
+
+**Note:**  
+- Ensure you have a `config.ru` file in your project root with the following content:
+  ```ruby
+  require './app'
+  run Sinatra::Application
+  ```
+- The server will listen on port `8080` as required by Fly.io.

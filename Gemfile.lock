@@ -48,6 +48,7 @@ DEPENDENCIES
   csv
   nokogiri
   open-uri
+  rack
   sinatra
 
 BUNDLED WITH
