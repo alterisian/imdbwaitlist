@@ -8,7 +8,6 @@ WORKDIR /app
 RUN gem update --system --no-document && \
     gem install -N bundler
 
-
 # Throw-away build stage to reduce size of final image
 FROM base as build
 
@@ -19,7 +18,6 @@ RUN apt-get update -qq && \
 # Install application gems
 COPY Gemfile* .
 RUN bundle install
-
 
 # Final stage for app image
 FROM base
