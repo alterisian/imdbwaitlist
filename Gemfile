@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'sinatra'
+gem 'rack'
+gem 'puma'
 gem 'csv'
 gem 'nokogiri'
 gem 'open-uri'
-gem 'rack'
+gem 'sinatra'

@@ -49,6 +49,9 @@ end
 file_path = 'waitlist.csv'
 wishlist = Wishlist.new(file_path)
 
+set :bind, '0.0.0.0'
+set :port, 8080
+
 get '/' do
   @movies = wishlist.pick_random_movies.map do |movie|
     key = "#{movie['Title'].downcase.gsub(/\s+/, '_')}_#{movie['Year']}"

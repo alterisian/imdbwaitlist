@@ -1,10 +1,10 @@
-# fly.toml app configuration file generated for imdbwaitlist-morning-voice-3227 on 2025-08-05T17:56:36+02:00
+# fly.toml app configuration file generated for imdbwaitlist on 2025-08-05T19:13:59+02:00
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'imdbwaitlist-morning-voice-3227'
-primary_region = 'ams'
+app = 'imdbwaitlist'
+primary_region = 'cdg'
 
 [build]
 
